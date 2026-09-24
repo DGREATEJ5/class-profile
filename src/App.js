@@ -1,15 +1,22 @@
 import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 import './App.css';
 
-function App() {
+// Import student cards (homepage)
+import Carlo from './students/Carlo/Carlo';
+
+// Import student full pages
+import CarloPage from './students/Carlo/CarloPage';
+
+// Homepage layout
+function Home() {
   return (
     <div className="app">
-
       <header className="header">
         <div className="header-content">
-          <div className="badge">Grade 12 · Work Immersion 2025</div>
+          <div className="badge">Grade 12 · Work Immersion 2026</div>
           <h1>Class Immersion <span>Profile</span></h1>
-          <p>Meet the future developers, designers, and innovators of tomorrow.</p>
+          <p>Get to know the students behind the work — their stories, goals, and journey during immersion.</p>
           <div className="header-stats">
             <div className="stat">
               <span className="stat-number">8</span>
@@ -17,13 +24,13 @@ function App() {
             </div>
             <div className="stat-divider" />
             <div className="stat">
-              <span className="stat-number">1</span>
-              <span className="stat-label">Team</span>
+              <span className="stat-number">2026</span>
+              <span className="stat-label">School Year</span>
             </div>
             <div className="stat-divider" />
             <div className="stat">
-              <span className="stat-number">∞</span>
-              <span className="stat-label">Potential</span>
+              <span className="stat-number">💼</span>
+              <span className="stat-label">Work Immersion</span>
             </div>
           </div>
         </div>
@@ -31,9 +38,9 @@ function App() {
       </header>
 
       <main className="main">
-        <div className="section-label">👇 Students will appear here</div>
         <div className="students-grid">
-          {/* Student cards will be imported here */}
+          <Carlo />
+          {/* other students added here as they join */}
         </div>
       </main>
 
@@ -43,8 +50,17 @@ function App() {
           <p className="footer-sub">Built with React + GitHub · Grade 12 Work Immersion 2025</p>
         </div>
       </footer>
-
     </div>
+  );
+}
+
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/carlo" element={<CarloPage />} />
+      {/* other student routes added here */}
+    </Routes>
   );
 }
 
