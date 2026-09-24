@@ -1,0 +1,156 @@
+/* ── CARD (Homepage) ── */
+.student-card {
+  background: #1e1e2e;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  padding: 28px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.student-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(129,140,248,0.4);
+}
+
+.student-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #818cf8;
+  margin-bottom: 16px;
+}
+
+.student-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #f1f5f9;
+  margin-bottom: 4px;
+}
+
+.student-role {
+  font-size: 0.85rem;
+  color: #818cf8;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.student-bio {
+  font-size: 0.85rem;
+  color: #94a3b8;
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+
+.student-tag {
+  display: inline-block;
+  background: rgba(99,102,241,0.15);
+  border: 1px solid rgba(99,102,241,0.3);
+  color: #818cf8;
+  font-size: 0.75rem;
+  padding: 4px 12px;
+  border-radius: 999px;
+  margin-bottom: 14px;
+}
+
+.view-profile {
+  display: block;
+  font-size: 0.82rem;
+  color: #818cf8;
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+/* ── FULL PROFILE PAGE ── */
+.profile-page {
+  min-height: 100vh;
+  background: #0f1117;
+  padding: 40px 20px;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.back-btn {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  color: #94a3b8;
+  padding: 8px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-bottom: 36px;
+  transition: background 0.2s;
+}
+
+.back-btn:hover {
+  background: rgba(255,255,255,0.1);
+  color: #f1f5f9;
+}
+
+.profile-hero {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.profile-img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #818cf8;
+  margin-bottom: 16px;
+}
+
+.profile-name {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #f1f5f9;
+  margin-bottom: 6px;
+}
+
+.profile-role {
+  font-size: 1rem;
+  color: #818cf8;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.profile-body {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.profile-section {
+  background: #1e1e2e;
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 14px;
+  padding: 24px;
+}
+
+.profile-section h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #818cf8;
+  margin-bottom: 12px;
+}
+
+.profile-section p {
+  font-size: 0.92rem;
+  color: #94a3b8;
+  line-height: 1.7;
+}
+
+.profile-section ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.profile-section ul li {
+  font-size: 0.92rem;
+  color: #94a3b8;
+}
